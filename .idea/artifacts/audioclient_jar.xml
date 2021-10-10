@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="audioclient:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/audioclient_jar</output-path>
+    <root id="archive" name="audioclient.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="audioclient" />
+      <element id="library" level="project" name="Maven: org.slf4j:slf4j-simple:2.0.0-alpha4" />
+      <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:2.0.0-alpha4" />
+    </root>
+  </artifact>
+</component>
