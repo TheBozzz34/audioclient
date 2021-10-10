@@ -5,6 +5,11 @@ import io.sentry.Sentry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.awt.*;
+import java.awt.event.*;
+import java.awt.TrayIcon.MessageType;
+import java.net.MalformedURLException;
+
 
 public class Main {
     private static Logger LOGGER = LoggerFactory.getLogger(Main.class);
@@ -19,6 +24,16 @@ public class Main {
             options.setDebug(false);
         });
         LOGGER.info("Initialized Sentry");
+
+        try {
+
+        } catch(Exception ex){
+            Sentry.captureException(ex);
+        }
+
+
+
+
     }
 
 }
